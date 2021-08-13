@@ -1,7 +1,7 @@
 const {Router} = require('express')
 const router = Router()
 
-const routersTitle = ['about','admin','her']
+const routersTitle = ['about']
 
 router.get('/', (req, res) =>{
     res.render('index',{
