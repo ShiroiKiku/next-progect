@@ -1,16 +1,19 @@
 const {Router} = require('express')
 const router = Router()
 
+const routersTitle = ['about','admin','her']
 
 router.get('/', (req, res) =>{
-    res.render(__filename,{
-        title:'__filename'
+    res.render('index',{
+        title:'title'
     })
 })
-// router.get('/about', (req, res) =>{
-//     res.render('about',{
-//         title:'about'
-//     })
-// })
+for (let index = 0; index < routersTitle.length; index++) {
+    router.get('/'+routersTitle[index], (req, res) =>{
+        res.render(routersTitle[index],{
+            title:routersTitle[index]
+        })
+    })
+}
 
 module.exports = router
