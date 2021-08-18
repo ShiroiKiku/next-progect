@@ -20,7 +20,7 @@
 }
 
 .menu__ul li {
-  padding: 0.6rem 0.7rem;
+  padding: 0.7rem 0.7rem;
 }
 
 .menu__ul li:hover {
@@ -33,7 +33,7 @@
 
 .menu__ul li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #41514d;
 }
 
