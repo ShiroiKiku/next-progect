@@ -1,55 +1,41 @@
 .menu
+    min-width: 100%
+    color: $menu-fc
+    background-color: $one-color
+    li
 
-    li
-        list-style: none
+        overflow: hidden
+        padding: 0rem 0.5rem
+
     a
-        text-decoration: none
+        color: $menu-fc
+
     &__list
-        display: flex
-<<<<<<< HEAD
         margin: 0
-        justify-content: center
-        padding: 0
-        text-align: center
-        vertical-align: middle
-        list-style-type: none
-        li
-            padding: 0.7rem 0.7rem
-            // display: inline-block
-=======
+        display: flex
+        position: relative
         >li
->>>>>>> 23d10f1dd97c61ee007c67beb5a72a4d1ecc8238
+            padding: 1rem
+
             &:hover
-                .sub-menu__list
-                    display: block
-<<<<<<< HEAD
-            a
-                text-decoration: none
-                font-size: 1.3rem
-                color: $head-fc
-    &__sub
-        li
-            &:hover
-                background-color: $one-color
-.sub
-    margin-top: 0.25rem
-    padding: 0 0
-    display: none
-    background-color: $two-color
-    li
-        padding: 0.5rem 0
-        display: block
-        background-color: $two-color
-=======
+                background-color: $two-color
+                .sub-menu
+                    &__list
+                        display: block
 
 .sub-menu
     &__list
-        display: none
 
-        top: 2rem
+        top: -1rem
+        margin-top: 4.2rem
+        max-width: 17rem
+        display: none
         position: absolute
-        padding-top: 2rem 0 0 0
+        padding: 0
+        background-color: $one-color
+        >li:hover
+            background-color: $two-color
+
     &__link
         display: inline-block
-        padding: 5px
->>>>>>> 23d10f1dd97c61ee007c67beb5a72a4d1ecc8238
+        padding: 0.7rem 1rem

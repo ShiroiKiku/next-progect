@@ -1,14 +1,25 @@
 @import "color"
 @import "font"
 @import "menu"
-*, *:befor,*:after
-    margin: 0
-    padding: 0
-    border: 0
+@import "footer"
+@import "content"
+
+*, *:befor, *:after
+    margin: 0 0
+    padding: 0 0
+    border: 0 0
     box-sizing: border-box
+
 html, body
     height: 100%
+    margin: 0 0
+    padding: 0 0
+    border: 0 0
 .wrapper
-    width: 100%
     display: flex
-    justify-content: center
+    flex-direction: column
+    min-height: 100%
+    overflow: hidden
+
+.container
+    margin: 0 auto

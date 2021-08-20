@@ -3,59 +3,123 @@
   font-weight: 500;
 }
 
-.menu li {
+a {
+  text-decoration: none;
+}
+
+li {
   list-style: none;
 }
 
-<<<<<<< HEAD
-.menu__ul li {
-  padding: 0.7rem 0.7rem;
-=======
+.menu {
+  min-width: 100%;
+  color: #1e3a33;
+  background-color: #d8bebd;
+}
+
+.menu li {
+  overflow: hidden;
+  padding: 0rem 0.5rem;
+}
+
 .menu a {
-  text-decoration: none;
->>>>>>> 23d10f1dd97c61ee007c67beb5a72a4d1ecc8238
+  color: #1e3a33;
 }
 
 .menu__list {
+  margin: 0;
   display: flex;
+  position: relative;
+}
+
+.menu__list > li {
+  padding: 1rem;
+}
+
+.menu__list > li:hover {
+  background-color: #b4959b;
 }
 
 .menu__list > li:hover .sub-menu__list {
   display: block;
 }
 
-<<<<<<< HEAD
-.menu__ul li a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: #41514d;
-=======
 .sub-menu__list {
+  top: -1rem;
+  margin-top: 4.2rem;
+  max-width: 17rem;
   display: none;
-  top: 2rem;
   position: absolute;
-  padding-top: 2rem 0 0 0;
->>>>>>> 23d10f1dd97c61ee007c67beb5a72a4d1ecc8238
+  padding: 0;
+  background-color: #d8bebd;
+}
+
+.sub-menu__list > li:hover {
+  background-color: #b4959b;
 }
 
 .sub-menu__link {
   display: inline-block;
-  padding: 5px;
+  padding: 0.7rem 1rem;
+}
+
+.footer {
+  background-color: #b9c0dc;
+}
+
+.footer__list {
+  display: flex;
+  position: relative;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: #2949ad;
+}
+
+.footer li {
+  overflow: hidden;
+  padding: 0rem 0.5rem;
+}
+
+.content {
+  min-width: 100%;
+  background-color: #e8ecef;
+  flex: 1 1 auto;
+  margin: 0 auto;
+}
+
+.content h1 {
+  text-align: center;
+  color: #1e3a33;
 }
 
 *, *:befor, *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0 0;
+  padding: 0 0;
+  border: 0 0;
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+  border: 0 0;
 }
 
 .wrapper {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
 }
