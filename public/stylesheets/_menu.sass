@@ -1,41 +1,51 @@
 .menu
-    min-width: 100%
+    border-bottom: 2px solid $bor-menu-color
     color: $menu-fc
     background-color: $one-color
-    li
-
-        overflow: hidden
-        padding: 0rem 0.5rem
-
+    height: 3rem
     a
         color: $menu-fc
-
     &__list
-        margin: 0
+        padding: 0
+        height: 3rem
         display: flex
-        position: relative
+        margin: 0
+        justify-content: center
+        align-items: center
+        &:hover
         >li
-            padding: 1rem
+            padding: 0 0.5rem
+            height: 3rem
 
+            display: flex
+            justify-content: center
             &:hover
                 background-color: $two-color
                 .sub-menu
                     &__list
                         display: block
-
+    &__link
+        line-height: 3rem
+    li
+        position: relative
 .sub-menu
     &__list
-
-        top: -1rem
-        margin-top: 4.2rem
-        max-width: 17rem
         display: none
         position: absolute
-        padding: 0
-        background-color: $one-color
-        >li:hover
-            background-color: $two-color
-
+        top: 20px
+        padding: 1.9rem 0px 0px 0px
+        >li
+            border-width: 0px 2px
+            border-style: solid
+            border-color: $bor-menu-color
+            padding: 0.5rem
+            background-color: $one-color
+            text-align: left
+            &:hover
+                background-color: $two-color
+            // &:first-child
+            //     border-width: 2px 2px 0px
+            &:last-child
+                border-width: 0px 2px 2px
     &__link
-        display: inline-block
-        padding: 0.7rem 1rem
+        padding: 0
